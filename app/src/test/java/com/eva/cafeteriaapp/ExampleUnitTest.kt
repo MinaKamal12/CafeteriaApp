@@ -1,4 +1,4 @@
-package com.eva.cafeteriaapp
+package com.example.myapplication
 
 import org.junit.Test
 
