@@ -11,7 +11,7 @@
 
     <ImageView
         android:id="@+id/item_image"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
         android:src="@drawable/food"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,41 +47,39 @@
 
 
     </LinearLayout>
+
     <LinearLayout
-        android:layout_marginTop="45dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_width="136dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
         android:gravity="center"
+        android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/detailFragment_increment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:background="@drawable/rounded"
-            android:src="@drawable/ic_add"
-            />
+        <Button
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:focusable="false"
+            android:id="@+id/decrement"
+            android:onClick="Decrement"
+            android:text="-" />
+
         <TextView
-            android:id="@+id/detailFragment_meal_counter"
+            android:id="@+id/MealsNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:text="2"
-            android:textSize="20sp"
-            />
-        <ImageButton
-            android:id="@+id/detailFragment_decrement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:background="@drawable/rounded"
-            android:src="@drawable/ic_delete"
-            />
+            android:text="0" />
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:focusable="false"
+            android:onClick="Increment"
+            android:text="+" />
     </LinearLayout>
 
     <ImageButton
